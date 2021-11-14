@@ -1333,6 +1333,7 @@ pre code {
   border: 2px solid #333;
   max-width: 96px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: #f5f5f5;
@@ -1711,10 +1712,6 @@ pre code {
   position: fixed;
   z-index: 1300;
   left: 30px;
-  width: 24px;
-}
-.back-to-top span {
-  display: none;
 }
 @media (max-width: 991px) {
   .back-to-top {
@@ -1734,6 +1731,16 @@ pre code {
 }
 .back-to-top.back-to-top-on {
   bottom: 19px;
+}
+.reading-progress-bar {
+  --progress: 0;
+  background: #37c6c0;
+  height: 3px;
+  position: fixed;
+  z-index: 1500;
+  width: var(--progress);
+  left: 0;
+  bottom: 0;
 }
 .rtl.post-body p,
 .rtl.post-body a,
@@ -2612,7 +2619,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #99b47e;
+  background: #916c57;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
