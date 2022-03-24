@@ -201,7 +201,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-03-24 22:11:18 / 修改时间：23:37:26" itemprop="dateCreated datePublished" datetime="2022-03-24T22:11:18+08:00">2022-03-24</time>
+      <time title="创建时间：2022-03-24 22:11:18 / 修改时间：23:44:20" itemprop="dateCreated datePublished" datetime="2022-03-24T22:11:18+08:00">2022-03-24</time>
     </span>
 
   
@@ -215,7 +215,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="DOL-HDR简介"><a href="#DOL-HDR简介" class="headerlink" title="DOL-HDR简介"></a>DOL-HDR简介</h1><p>本文参考自博客：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/wujianming-110117/p/12684011.html">https://www.cnblogs.com/wujianming-110117/p/12684011.html</a><br>感谢博主的无私分享。</p>
-<p>[TOC]</p>
 <h2 id="1-HDR-sensor"><a href="#1-HDR-sensor" class="headerlink" title="1 HDR sensor"></a>1 HDR sensor</h2><h3 id="1-1-什么是sensor的动态范围"><a href="#1-1-什么是sensor的动态范围" class="headerlink" title="1.1 什么是sensor的动态范围"></a>1.1 什么是sensor的动态范围</h3><p>sensor的动态范围就是sensor在一幅图像里能够同时展现高光内容和阴影内容的能力。<br>公式表达为：<br>$$ DR = 20 * log_{10}(\frac{i_{max}}{i_{min}})$$<br>单位是dB。<br>$i_{max}$为sensor最大不饱和电流，也可以说是sensor刚刚饱和的电流。<br>$i_{min}$为sensor的底电流，即无任何光子输入时的电流，又叫做black level。</p>
 <h3 id="1-2-为什么HDR在成像领域是个难点"><a href="#1-2-为什么HDR在成像领域是个难点" class="headerlink" title="1.2 为什么HDR在成像领域是个难点"></a>1.2 为什么HDR在成像领域是个难点</h3><p>自然界真实情况下的动态范围上限很高，超过100dB，人眼的动态范围可以达到100dB，但是sensor的动态范围往往小于这个范围。<br>以GN2这颗消费电子的顶级sensor为例，比特位宽为12，意味着$DR = 20 * log_{10}(2^{12}) = 72.25dB$ 。<br>而普通的消费电子级sensor只有10bit位宽，意味着$DR = 20 * log_{10}(2^{10}) = 60dB$ 。<br>所以，当sensor的DR小于环境DR的时候，就会出现问题，亮处看不清或者暗部看不清，或者亮部暗部同时难以看清。</p>
 <h3 id="1-3-解决HDR问题的数学分析"><a href="#1-3-解决HDR问题的数学分析" class="headerlink" title="1.3 解决HDR问题的数学分析"></a>1.3 解决HDR问题的数学分析</h3><p>根据公式$ DR = 20 * log_{10}(\frac{i_{max}}{i_{min}})$，提高DR的方法，就是提高sensor的bit位宽，但是现实中，却没有那么简单。<br>提高sensor的bit位宽，不仅会导致sensor成本的提高，也会导致整个图像处理器的带宽相应提高，从而消耗的内存也相应提高。所以解决HDR问题，不能单纯使用提高sensor比特位宽的办法。</p>
@@ -302,7 +301,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-03-23 22:52:24" itemprop="dateModified" datetime="2022-03-23T22:52:24+08:00">2022-03-23</time>
+        <time title="修改时间：2022-03-24 23:44:32" itemprop="dateModified" datetime="2022-03-24T23:44:32+08:00">2022-03-24</time>
       </span>
 
   
@@ -315,8 +314,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="如何把控项目进度"><a href="#如何把控项目进度" class="headerlink" title="如何把控项目进度"></a>如何把控项目进度</h1><p>[toc]</p>
-<h2 id="一、工具"><a href="#一、工具" class="headerlink" title="一、工具"></a>一、工具</h2><h3 id="A-甘特图"><a href="#A-甘特图" class="headerlink" title="A. 甘特图"></a>A. 甘特图</h3><p>好处是：</p>
+          <h1 id="如何把控项目进度"><a href="#如何把控项目进度" class="headerlink" title="如何把控项目进度"></a>如何把控项目进度</h1><h2 id="一、工具"><a href="#一、工具" class="headerlink" title="一、工具"></a>一、工具</h2><h3 id="A-甘特图"><a href="#A-甘特图" class="headerlink" title="A. 甘特图"></a>A. 甘特图</h3><p>好处是：</p>
 <ol>
 <li>任务拆解</li>
 <li>任务优先级划分</li>
@@ -389,10 +387,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-12-01 22:13:05 / 修改时间：22:22:53" itemprop="dateCreated datePublished" datetime="2021-12-01T22:13:05+08:00">2021-12-01</time>
+      <time title="创建时间：2021-12-01 22:13:05" itemprop="dateCreated datePublished" datetime="2021-12-01T22:13:05+08:00">2021-12-01</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-03-24 23:47:32" itemprop="dateModified" datetime="2022-03-24T23:47:32+08:00">2022-03-24</time>
+      </span>
 
   
 </div>
@@ -404,7 +408,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="vs工程"><a href="#vs工程" class="headerlink" title="vs工程"></a>vs工程</h1><p>一个完整的VS工程，一般会包含若干个算法模块。目前有尝试过两种</p>
+          <h1 id="vs工程"><a href="#vs工程" class="headerlink" title="vs工程"></a>vs工程</h1><p>一个完整的VS工程，一般会包含若干个算法模块。目前有尝试过两种。</p>
+<h2 id="方案一：1-solution-gt-1-project-gt-N-filters"><a href="#方案一：1-solution-gt-1-project-gt-N-filters" class="headerlink" title="方案一：1 solution -&gt; 1 project -&gt; N filters"></a>方案一：1 solution -&gt; 1 project -&gt; N filters</h2><h2 id="方案二：1-solution-gt-N-project-gt-N-M-filters"><a href="#方案二：1-solution-gt-N-project-gt-N-M-filters" class="headerlink" title="方案二：1 solution -&gt; N project -&gt; N*M filters"></a>方案二：1 solution -&gt; N project -&gt; N*M filters</h2><p>未完待续…</p>
 
       
     </div>

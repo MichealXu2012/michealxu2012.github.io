@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="DOL-HDR简介本文参考自博客：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;wujianming-110117&#x2F;p&#x2F;12684011.html感谢博主的无私分享。 [TOC] 1 HDR sensor1.1 什么是sensor的动态范围sensor的动态范围就是sensor在一幅图像里能够同时展现高光内容和阴影内容的能力。公式表达为：$$ DR &#x3D; 20 * log_{10}(\frac{i">
+<meta name="description" content="DOL-HDR简介本文参考自博客：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;wujianming-110117&#x2F;p&#x2F;12684011.html感谢博主的无私分享。 1 HDR sensor1.1 什么是sensor的动态范围sensor的动态范围就是sensor在一幅图像里能够同时展现高光内容和阴影内容的能力。公式表达为：$$ DR &#x3D; 20 * log_{10}(\frac{i_{max}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOL-HDR">
 <meta property="og:url" content="http://example.com/2022/03/24/DOL-HDR/index.html">
 <meta property="og:site_name" content="MichealXu&#39;s Blog">
-<meta property="og:description" content="DOL-HDR简介本文参考自博客：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;wujianming-110117&#x2F;p&#x2F;12684011.html感谢博主的无私分享。 [TOC] 1 HDR sensor1.1 什么是sensor的动态范围sensor的动态范围就是sensor在一幅图像里能够同时展现高光内容和阴影内容的能力。公式表达为：$$ DR &#x3D; 20 * log_{10}(\frac{i">
+<meta property="og:description" content="DOL-HDR简介本文参考自博客：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;wujianming-110117&#x2F;p&#x2F;12684011.html感谢博主的无私分享。 1 HDR sensor1.1 什么是sensor的动态范围sensor的动态范围就是sensor在一幅图像里能够同时展现高光内容和阴影内容的能力。公式表达为：$$ DR &#x3D; 20 * log_{10}(\frac{i_{max}">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2022/03/24/qJ71qH.png">
 <meta property="og:image" content="https://s1.ax1x.com/2022/03/24/qJHzcT.png">
@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://s1.ax1x.com/2022/03/24/qJvLsP.png">
 <meta property="og:image" content="https://s1.ax1x.com/2022/03/24/qJvOqf.png">
 <meta property="article:published_time" content="2022-03-24T14:11:18.000Z">
-<meta property="article:modified_time" content="2022-03-24T15:37:26.873Z">
+<meta property="article:modified_time" content="2022-03-24T15:44:20.908Z">
 <meta property="article:author" content="Micheal Xu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://s1.ax1x.com/2022/03/24/qJ71qH.png">
@@ -218,7 +218,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-03-24 22:11:18 / 修改时间：23:37:26" itemprop="dateCreated datePublished" datetime="2022-03-24T22:11:18+08:00">2022-03-24</time>
+      <time title="创建时间：2022-03-24 22:11:18 / 修改时间：23:44:20" itemprop="dateCreated datePublished" datetime="2022-03-24T22:11:18+08:00">2022-03-24</time>
     </span>
 
   
@@ -239,7 +239,6 @@
     
     <div class="post-body" itemprop="articleBody">
         <h1 id="DOL-HDR简介"><a href="#DOL-HDR简介" class="headerlink" title="DOL-HDR简介"></a>DOL-HDR简介</h1><p>本文参考自博客：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/wujianming-110117/p/12684011.html">https://www.cnblogs.com/wujianming-110117/p/12684011.html</a><br>感谢博主的无私分享。</p>
-<p>[TOC]</p>
 <h2 id="1-HDR-sensor"><a href="#1-HDR-sensor" class="headerlink" title="1 HDR sensor"></a>1 HDR sensor</h2><h3 id="1-1-什么是sensor的动态范围"><a href="#1-1-什么是sensor的动态范围" class="headerlink" title="1.1 什么是sensor的动态范围"></a>1.1 什么是sensor的动态范围</h3><p>sensor的动态范围就是sensor在一幅图像里能够同时展现高光内容和阴影内容的能力。<br>公式表达为：<br>$$ DR = 20 * log_{10}(\frac{i_{max}}{i_{min}})$$<br>单位是dB。<br>$i_{max}$为sensor最大不饱和电流，也可以说是sensor刚刚饱和的电流。<br>$i_{min}$为sensor的底电流，即无任何光子输入时的电流，又叫做black level。</p>
 <h3 id="1-2-为什么HDR在成像领域是个难点"><a href="#1-2-为什么HDR在成像领域是个难点" class="headerlink" title="1.2 为什么HDR在成像领域是个难点"></a>1.2 为什么HDR在成像领域是个难点</h3><p>自然界真实情况下的动态范围上限很高，超过100dB，人眼的动态范围可以达到100dB，但是sensor的动态范围往往小于这个范围。<br>以GN2这颗消费电子的顶级sensor为例，比特位宽为12，意味着$DR = 20 * log_{10}(2^{12}) = 72.25dB$ 。<br>而普通的消费电子级sensor只有10bit位宽，意味着$DR = 20 * log_{10}(2^{10}) = 60dB$ 。<br>所以，当sensor的DR小于环境DR的时候，就会出现问题，亮处看不清或者暗部看不清，或者亮部暗部同时难以看清。</p>
 <h3 id="1-3-解决HDR问题的数学分析"><a href="#1-3-解决HDR问题的数学分析" class="headerlink" title="1.3 解决HDR问题的数学分析"></a>1.3 解决HDR问题的数学分析</h3><p>根据公式$ DR = 20 * log_{10}(\frac{i_{max}}{i_{min}})$，提高DR的方法，就是提高sensor的bit位宽，但是现实中，却没有那么简单。<br>提高sensor的bit位宽，不仅会导致sensor成本的提高，也会导致整个图像处理器的带宽相应提高，从而消耗的内存也相应提高。所以解决HDR问题，不能单纯使用提高sensor比特位宽的办法。</p>
